@@ -20,7 +20,7 @@ public class Student_Registration_Form {
 
     @Test
     void successfulSubmitForm() {
-        //Test values
+//Test values
         String firstName = "Anton";
         String lastName = "Sidorov";
         String userEmail = "ant@mail.com";
@@ -29,7 +29,7 @@ public class Student_Registration_Form {
         String currentAddress = "Sport street";
         String state = "NCR";
         String city = "Gurgaon";
-        //Open test form
+//Open test form
         open("https://demoqa.com/automation-practice-form");
         //Entering test values
         $("#firstName").setValue(firstName);
@@ -49,7 +49,7 @@ public class Student_Registration_Form {
         $("#react-select-3-input").setValue(state).pressEnter();
         $("#react-select-4-input").setValue(city).pressEnter();
         $("#submit").click();
-        //Checking result
+//Checking result
         $(".table-responsive").shouldHave(text("Student Name"), text(firstName+" "+lastName));
         $(".table-responsive").shouldHave(text("Student Email"), text(userEmail));
         $(".table-responsive").shouldHave(text("Gender"), text("Male"));
