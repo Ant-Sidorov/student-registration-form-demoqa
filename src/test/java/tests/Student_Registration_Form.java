@@ -31,7 +31,7 @@ public class Student_Registration_Form {
         String city = "Gurgaon";
 //Open test form
         open("https://demoqa.com/automation-practice-form");
-        //Entering test values
+//Entering test values
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(userEmail);
